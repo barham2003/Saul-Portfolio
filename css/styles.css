@@ -132,6 +132,16 @@ footer p a {
   gap: 0.4em;
 }
 
+.grid-consultation {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 0.5em;
+}
+
+div article embed {
+  width: 100%;
+}
+
 .click-name {
   margin-block: 0.4em;
   font-size: 0.7em;
@@ -234,6 +244,12 @@ figure figcaption {
   .grid-criminals {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-consultation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10em;
   }
 
   embed {
