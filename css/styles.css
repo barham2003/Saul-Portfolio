@@ -195,9 +195,28 @@ figure figcaption {
   display: none;
 }
 
-.show-list li,
-.case-list li {
+.show-list,
+.case-list,
+.hours {
   margin-left: 2em;
+}
+
+#map {
+  width: 100%;
+  height: 14em;
+}
+
+.tel-link {
+  text-align: center;
+}
+
+.tel-link a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  background-color: #ffff33;
+  border-radius: 0.5em;
+  padding: 0.6em;
 }
 
 /*Tablet styles*/
@@ -294,6 +313,11 @@ figure figcaption {
   embed {
     width: 40%;
     min-height: 400px;
+  }
+
+  #map {
+    width: 50%;
+    height: 23em;
   }
 }
 

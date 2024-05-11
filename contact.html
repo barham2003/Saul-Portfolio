@@ -3,18 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Saul Goodman Portfolio</title>
+    <link rel="icon" sizes="192x192" href="images/bcs-logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <p>Got into trouble? Call us right now</p>
-    <p class="tel-link"><a href="tel:5055034455">505-503-4455</a></p>
+    <div class="container">
+      <div class="header-container">
+        <header>
+          <a href="index.html">
+            <img alt="Better Call Saul Logo" src="images/bcs-logo.png" />
+          </a>
+        </header>
 
-    <h4>Available Office Hours:</h4>
-    <ul class="hours">
-      <li>Mon - Thu: 8:00am - 6:00pm</li>
-      <li>Saturday: 8:00am - 4:00pm</li>
-      <li>Sunday: 10:00am - 4:00pm</li>
-      <li>Friday: Closed</li>
-    </ul>
+        <nav class="tablet-desktop">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About </a></li>
+            <li><a href="testimonies.html"> Testimonies </a></li>
+            <li><a href="consultations.html"> Consultations </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+
+        <img
+          src="images/hamburger.png"
+          width="30"
+          class="mobile"
+          id="hamburger"
+          alt="hamburger menu navigation"
+          onclick="toggleNav()"
+        />
+
+        <nav class="mobile nav-mobile hidden">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About </a></li>
+            <li><a href="testimonies.html"> Testimonies </a></li>
+            <li><a href="consultations.html"> Consultations </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main>
+        <h1 class="main-header">Contact</h1>
+        <h4>in legal trouble? Call Saul right now</h4>
+        <p class="tel-link mobile"><a href="tel:5055034455">505-503-4455</a></p>
+        <p class="tablet-desktop">Phone Number: 505-503-4455</p>
+
+        <h4>Available Office Hours:</h4>
+        <ul class="hours">
+          <li>Mon - Thu: 8:00am - 6:00pm</li>
+          <li>Saturday: 8:00am - 4:00pm</li>
+          <li>Sunday: 10:00am - 4:00pm</li>
+          <li>Friday: Closed</li>
+        </ul>
+
+        <h4>My Office Address:</h4>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13052.360727035113!2d-106.5318552!3d35.129423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fe2e42a10a7%3A0x9468e2bfe8fb1983!2sSaul%20Goodman&#39;s%20Office!5e0!3m2!1sen!2siq!4v1715427876011!5m2!1sen!2siq"
+          style="border: 0"
+          allowfullscreen=""
+          id="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </main>
+      <footer>
+        <p>&copy; 2024. All Rights Reserved</p>
+        <p>Call us through here: <a href="tel:5055034455">505-503-4455</a></p>
+      </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
