@@ -123,6 +123,12 @@ embed {
   height: 400px;
 }
 
+.testimonies-list ul li {
+  margin-left: 1em;
+  color: yellow;
+  text-shadow: 0.5px 1px 3px black;
+}
+
 section a {
   text-decoration: none;
 }
@@ -185,12 +191,25 @@ figure figcaption {
   margin: 0 auto;
 }
 
+.desktop {
+  display: none;
+}
+
+.show-list li,
+.case-list li {
+  margin-left: 2em;
+}
+
 /*Tablet styles*/
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 700px), print {
   .mobile {
     display: none;
   }
   .tablet-desktop {
+    display: block;
+  }
+
+  .tablet {
     display: block;
   }
 
@@ -217,6 +236,7 @@ figure figcaption {
     padding-inline: 30px;
     padding: 0.3em;
     transition: all 200ms ease-in-out;
+    z-index: 200;
   }
 
   nav ul {
@@ -251,16 +271,12 @@ figure figcaption {
     transform: translate3d(0, 0, 0);
   }
 
-  ul {
-    display: inline;
-  }
-
   header {
-    width: 50%;
+    width: 25%;
   }
 
   header img {
-    width: 15%;
+    width: 50%;
     margin-inline-start: 3%;
   }
 
@@ -273,6 +289,49 @@ figure figcaption {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10em;
+  }
+
+  embed {
+    width: 40%;
+    min-height: 400px;
+  }
+}
+
+/*Styles large desktop*/
+@media screen and (min-width: 1600px) {
+  .desktop {
+    display: table;
+  }
+  .tablet,
+  .mobile {
+    display: none;
+  }
+
+  header img {
+    width: 30%;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 2px solid #df0202;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin: 0 auto;
+  }
+
+  th {
+    color: red;
+    text-align: left;
+  }
+  td {
+    text-align: center;
+  }
+
+  th,
+  td {
+    border: 1px solid #df0202;
+    padding: 0.5em;
   }
 
   figure {
@@ -292,13 +351,4 @@ figure figcaption {
   figure:hover {
     border-color: #df0202;
   }
-
-  embed {
-    width: 40%;
-    min-height: 400px;
-  }
-}
-
-/*Styles large desktop*/
-@media screen and (min-width: 1921px) {
 }
