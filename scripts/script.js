@@ -1,5 +1,5 @@
+// * Observer
 const headerContainerDiv = document.querySelector(".header-container");
-
 // Creating and putting the watcher element
 const scrollWatcherDiv = document.createElement("div");
 scrollWatcherDiv.setAttribute("data-scroll-watcher", "");
@@ -11,3 +11,12 @@ const navObserver = new IntersectionObserver((enteries) => {
 });
 // Observe scroll watcher div
 navObserver.observe(scrollWatcherDiv);
+
+// * Responsive Navbar
+const mobileNav = document.querySelector(".nav-mobile");
+const header = document.querySelector("header");
+
+function toggleNav() {
+  mobileNav.classList.toggle("hidden");
+  header.classList.toggle("hidden");
+}

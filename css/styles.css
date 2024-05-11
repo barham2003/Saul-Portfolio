@@ -48,19 +48,36 @@ body {
 }
 
 .header-container {
-  /* height: 90px; */
   transition: all 200ms ease-in-out;
+  position: relative;
+  margin-block: 0.8em;
+}
+
+#hamburger {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+}
+
+.nav-mobile ul li {
+  margin-bottom: 0.5em;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
 }
 
 header {
   /* padding-top: 0.3em; */
   display: block;
   top: 0;
-  width: 50%;
+  width: 100%;
+  transition: opacity 400ms ease-in-out;
 }
 
 header img {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -191,6 +208,8 @@ figure figcaption {
     position: sticky;
     border-block: 1px #df0202 solid;
     top: 0;
+    margin: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -236,6 +255,10 @@ figure figcaption {
     display: inline;
   }
 
+  header {
+    width: 50%;
+  }
+
   header img {
     width: 15%;
     margin-inline-start: 3%;
@@ -250,6 +273,24 @@ figure figcaption {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10em;
+  }
+
+  figure {
+    border: #fffce5 solid 2px;
+    transition: border-color 200ms ease-in-out;
+  }
+
+  figure figcaption {
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+
+  figure:hover figcaption {
+    opacity: 1;
+  }
+  figure:hover {
+    border-color: #df0202;
   }
 
   embed {
